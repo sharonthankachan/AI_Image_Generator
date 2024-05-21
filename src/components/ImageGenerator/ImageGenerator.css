@@ -1,0 +1,134 @@
+.ai-image-generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.header {
+    font-size: 3vw; 
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header span {
+    color: #42a5f5;
+    font-weight: 600;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img-loading img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.searchbar {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    background: #1F3540;
+    padding: 0 10px;
+}
+
+.search-input {
+    width: calc(100% - 210px); 
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.generate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 65px;
+    font-size: 15px;
+    border-radius: 40px;
+    background: #0b82e498;
+    cursor: pointer;
+}
+
+.loading-bar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 0px;
+    height: 8px;
+    background: #42a5f5;
+    border-radius: 10px;
+}
+
+.loading-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.loading-bar-full {
+    margin-right: auto;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 490px;
+    transition: 15s;
+    height: 8px;
+    background: #42a5f5;
+    border-radius: 10px;
+}
+
+.display-none {
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 7vw;
+    }
+
+    .searchbar {
+        height: auto;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .generate-btn {
+        width: 100%;
+        height: 50px;
+    }
+
+    .loading-bar-full {
+        width: 100%;
+    }
+}
